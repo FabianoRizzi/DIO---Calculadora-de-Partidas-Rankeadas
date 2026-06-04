@@ -3,19 +3,19 @@ function calcularVitorias(vitorias, derrotas) {
   let saldoVitorias = vitorias - derrotas;
   let nivel = "";
 
-  if (vitorias < 10) {
+  if (saldoVitorias <= 10) {
     nivel = "Ferro";
-  } else if (vitorias <= 20) {
+  } else if (saldoVitorias <= 20) {
     nivel = "Bronze";
-  } else if (vitorias <= 50) {
+  } else if (saldoVitorias <= 50) {
     nivel = "Prata";
-  } else if (vitorias <= 80) {
+  } else if (saldoVitorias <= 80) {
     nivel = "Ouro";
-  } else if (vitorias <= 90) {
+  } else if (saldoVitorias <= 90) {
     nivel = "Diamante";
-  } else if (vitorias <= 100) {
+  } else if (saldoVitorias <= 100) {
     nivel = "Lendário";
-  } else if (vitorias >= 101) {
+  } else if (saldoVitorias >= 101) {
     nivel = "Imortal";
   }
 
@@ -25,4 +25,4 @@ function calcularVitorias(vitorias, derrotas) {
 }
 
 // Exemplo de uso
-calcularVitorias(75, 20);
+calcularVitorias(100, 14);
